@@ -1,0 +1,36 @@
+{
+  "name": "profile-viewer",
+  "version": "1.0.0",
+  "description": "Get and display user github info.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --open --mode=development",
+    "start:prod": "webpack-dev-server --open --mode=production",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leor491/profile-viewer.git"
+  },
+  "author": "Leor Dilmanian",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "dotenv-webpack": "^1.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.13.0",
+    "eslint-plugin-react": "^7.12.4",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
