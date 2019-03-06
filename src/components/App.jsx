@@ -11,7 +11,7 @@ export default class App extends Component {
 		this.state = {
 			userData: {},
 			userRepos: [],
-			perPage: 5,
+			perPage: 10,
 			page: 1
 		};
 	}
@@ -39,7 +39,8 @@ export default class App extends Component {
 			this.setState({
 				userData: data,
 				page: 1, 
-				totalPages: Math.round((data.public_repos + this.state.perPage)/this.state.perPage)});
+				totalPages: Math.ceil(data.public_repos/this.state.perPage)
+			});
 		}).fail((xhr, status, err) => {
 			alert("Error: " + err);
 		});

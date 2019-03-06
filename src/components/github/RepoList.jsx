@@ -41,7 +41,7 @@ export default class RepoList extends Component {
 						<li className={this.props.page === 1 ? 'previous disabled' : 'previous'}>
 							<a onClick={() => {this.onRepoNav(false)}}><span aria-hidden="true">&larr;</span> Previous</a>
 						</li>
-						<li className={this.props.page === this.props.totalPages ? 'next disabled' : 'next'}>
+						<li className={this.props.page >= this.props.totalPages ? 'next disabled' : 'next'}>
 							<a onClick={() => {this.onRepoNav(true)}}>Next <span aria-hidden="true">&rarr;</span></a>
 						</li>
 					</ul>
